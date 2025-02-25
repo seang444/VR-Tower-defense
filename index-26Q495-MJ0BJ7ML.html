@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+
+<html>
+  <head>
+	<title>Home</title>
+	<style>
+		html, body {
+			background-image: linear-gradient(to left, lightgray, gray, gray , lightgray);
+		}
+		#Play {
+			background-color: #aaa;
+			font-size : 3vw;
+			font-family : monospace;
+			width : 33%;
+			height : 10%;
+			position: absolute;
+			top: 75%;
+			left: 33%;
+		}
+		
+		#divide {
+			width: 75%;
+			height: 100%;
+		}
+		
+		#top, #bottom {
+			top: 0%;
+			padding: 0px;
+			margin: 0px;
+			height: 10%;
+			left: 0%;
+			width: 100%;
+			position: absolute;
+			background-color: #777;
+		}
+		
+		#bottom {
+			top: 90%;
+		}
+		
+		#directions {
+			padding: 0px;
+			margin: 0px;
+			top: 15%;
+			height: 55%;
+			background-color: #aaa;
+			background-image: linear-gradient(to left, #fff, #aaa, #aaa , #fff);
+			position: absolute;
+			left: 12%;
+			width: 75%;
+		}
+		
+		#directions h3 {
+			margin: 1% 0;
+			padding: 2px;
+			font-size : 3vw;
+			font-family : monospace;
+			font-weight: 900;
+			text-align: center;
+		}
+		
+		#directions p.text {
+			margin: 0;
+			padding: 0;
+			font-size : 0.9vw;
+			font-family : monospace;
+			font-weight: 500;
+		}
+		
+		#keybinds, #goal {
+			font-weight: 750;
+			font-size : 2vw;
+			text-align: center;
+			font-family : monospace;
+			width: 48%;
+			margin: 0px;
+			padding: 0px;
+			position: absolute;
+		}
+		
+		#keybind {
+			right: 2.5%;
+			text-align: left;
+			width: 45%;
+			height: 60%;
+			position: absolute;
+			top: 35%;
+		}
+		
+		#goa {
+			left: 2.5%;
+			text-align: left;
+			width: 45%;
+			height: 60%;
+			position: absolute;
+			top: 35%;
+		}
+		
+		#keybinds {
+			right: 0%;
+		}
+	</style>
+  </head>
+  <body>
+	<div id="divide">
+	<div id="top"></div>
+	<div id="bottom"></div>
+	<button id="Play" onclick="document.location='/game.html'">Play</button>
+	<div id="directions">
+		<h3 id="title">Directions:</h3>
+		<p id="keybinds">Controls:</p>
+		<p id="keybind" class="text"> <b>[Right Click]</b> = Interact with buttons<br><br><i>In Game Controls:</i><br><b>[W/A/S/D]</b> = Move around<br><b>[M]</b> = Pause the game<br><b>[1-7]</b> = Select Tower To Place<br><b>Hold [E]</b> = Place tower at cursor<br>(<b>Right Click</b> to place tower while holding <b>E</b>)<br> <b>[Right Click]</b> = Select placed tower<br><br><i>While Tower Is Selected:</i><br><b>[U]</b> = Upgrade Tower<br><b>[Backspace]</b> = Sell tower<br><b>[L/K]</b> = Switch tower targetting</p>
+		<p id="goal">Your goal:</p>
+		<p id="goa"  class="text">In this game, your goal is to</p>
+	</div>
+	</div>
+	<script>
+	
+	</script>
+  </body>
+</html>
